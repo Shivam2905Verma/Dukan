@@ -8,7 +8,7 @@ export const AppContext = createContext();
 // 2. Create a provider component
 export const AppProvider = ({ children }) => {
   const api = axios.create({
-    baseURL: "http://127.0.0.1:8080/",
+    baseURL: "https://dukan-one.vercel.app/",
     headers: { "Content-Type": "application/json" },
   });
 
