@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  padding: 2vw;
+}
+
+.name {
+  text-align: center;
+  position: relative;
+}
+
+.name input {
+  padding: 10px;
+  border: 2px solid white;
+  background: transparent;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.name input::placeholder {
+  color: white;
+}
+
+.dropDown {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 100%);
+  width: 250px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #2c2c2c; /* dark grey for a modern look */
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0; /* no padding by default, animate later */
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+.dropDown.open {
+  max-height: 500px; /* enough for items */
+  /* padding: 0.5rem 0; smooth padding animation */
+}
+
+.dropDown p {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dropDown p:hover {
+  background-color: #444; /* darker hover effect */
+  color: #ffd700; /* gold highlight */
+}
+
+.dropDown p:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* subtle divider */
+}
+
+.tableBox {
+  height: 50vh;
+}
+
+.my_table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse; /* optional */
+}
+
+.my_table th,
+.my_table td {
+  border: 1px solid black; /* optional */
+  padding: 8px;
+  text-align: center;
+}
+
+.cashAndGold {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* In Cash Button */
+.incashBtn {
+  background: linear-gradient(135deg, #222, #333);
+  color: #ffd166;
+  padding: 10px 25px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(255, 209, 102, 0.1);
+  border: 1px solid #444;
+}
+
+.incashBtn:hover {
+  background: linear-gradient(135deg, #333, #444);
+  box-shadow: 0 0 10px rgba(255, 209, 102, 0.5);
+  transform: scale(1.05);
+}
+
+/* Save Data Button */
+.saveData {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  color: #66ccff;
+  border: 1px solid #333;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(102, 204, 255, 0.15);
+}
+
+.saveData:hover {
+  background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+  box-shadow: 0 0 10px rgba(102, 204, 255, 0.5);
+  transform: scale(1.05);
+}

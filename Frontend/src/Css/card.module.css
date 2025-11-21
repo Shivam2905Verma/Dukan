@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  color: #fff;
+  text-decoration: none !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(50, 50, 50, 0.7); /* darker semi-transparent background */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.container h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.link {
+  text-decoration: none;  /* remove underline */
+  color: inherit;         /* inherit text color */
+}

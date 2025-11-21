@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+.container {
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+.allChains {
+  height: 73vh;
+  overflow-y: scroll;
+}
+
+.my_table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse; /* optional */
+}
+
+.my_table th,
+.my_table td {
+  border: 1px solid black; /* optional */
+  padding: 8px;
+  text-align: center;
+}
+
+.deleteBtn {
+  cursor: pointer;
+}
+
+.weight,
+.tunch {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.weight::placeholder {
+  color: white;
+}
+
+.tunch::placeholder {
+  color: white;
+}
+
+.addChains {
+  margin-top: 1vw;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2.5vmax;
+}
+
+.footer {
+  /* padding: 0vw 2vw; */
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment{
+  cursor: pointer;
+  width: 15vw;
+  padding: 0.5vw 0.7vw;
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 6px; /* Thin width */
+  height: 6px; /* For horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Dark track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* Dark gray thumb */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Slightly lighter on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #555 #1e1e1e; /* thumb color | track color */
+}

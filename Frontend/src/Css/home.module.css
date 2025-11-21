@@ -1,0 +1,82 @@
+.conatiner{
+    width: 100%;
+    padding: 2rem 2rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.allTransactions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 74vh;
+    overflow-y: scroll;
+    padding-top: 1rem;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dateInput {
+  padding: 0.1rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #555; /* subtle dark border */
+  background-color: #2a2a2a; /* dark background */
+  color: #fff; /* text color */
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.dateInput:hover {
+  border-color: #777; /* slightly lighter border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Focus effect */
+.dateInput:focus {
+  border-color: #ffd700; /* gold highlight */
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6); /* glow */
+  background-color: #333; /* slightly lighter background */
+}
+
+/* Optional: placeholder color for browsers that support it */
+.dateInput::placeholder {
+  color: #aaa;
+}
+
+
+.newTransaction {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  background: linear-gradient(135deg, #6c63ff, #3f3dff); /* modern gradient */
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 50px; /* more pill-like */
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* subtle shadow */
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Hover effect */
+.newTransaction:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #7d6cff, #4f4dff); /* slightly brighter on hover */
+}
+
+/* Optional: active effect */
+.newTransaction:active {
+  transform: translateY(0px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
